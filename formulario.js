@@ -21,7 +21,7 @@ const [tarea,setTarea] = useState("")
         <form onSubmit={enviarDatos}>
             <input type="text" placeholder="Ingresar tarea" 
             onChange={cambiarDatos} name="tarea" value={tarea}/>
-            <button type="submit"> Agregar </button>
+            <button className="botones" type="submit"> Agregar </button>
         </form>
         </div>
     )
