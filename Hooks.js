@@ -1,16 +1,45 @@
-import React,{useState} from 'react';
+import react from 'react';
 
-export default function Hooks(){
-    const [numero, setNumero]= useState(5)
+class Contador extends react.Component{
+    state ={
+        numero: 0
+    }
+    incrementar = () => {
+        this.setState({
+        numero: this.state.numero +3
+        })
+        if(this.state.numero >27){
+            this.setState({ numero:this.state.numero =0
+        })
+        }
+    }    
 
-    function incrementar(){
-        setNumero(numero +1)
+    decrementar = () => {
+        this.setState({
+        numero: this.state.numero -0.5    
+        })
+
+        if(this.state.numero <0.5){
+            this.setState({ numero:this.state.numero =0
+        })
+        }
     }
 
-    return(
-        <div>
-            <h1>{numero}</h1>
-            <button onClick={incrementar}>+</button>
-        </div>
-    )
+    reiniciar =() => {
+        this.setState({
+        numero:this.state.numero =0
+        })
+    }
+
+    render(){
+        return(
+            <div>
+              <h1>{this.state.numero}</h1>
+              <button className="botones" onClick={this.incrementar}> + </button>
+              <button className="botones" onClick={this.decrementar}> - </button>
+              <button className="botones" onClick={this.reiniciar}>reiniciar</button>
+            </div>
+        )
 }
+}
+export default Contador;
