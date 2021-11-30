@@ -1,6 +1,20 @@
 body{
-    background:linear-gradient(black,#AAA,black)
+    background:url(http://carve850.com.uy/wp-content/uploads/2021/09/Deportes-23-09-2021.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
 }
 button{
-    background: yellow;
+    background: transparent;
+    background:url(https://pbs.twimg.com/profile_images/1451538244454297608/MzhNWF4J_400x400.jpg);
+    background-size: 10px;
 }
+h1{
+    color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botones{
+    color: #AAA;
+}
+
