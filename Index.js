@@ -4,7 +4,6 @@ import './index.css';
 //import App from './App';
 import Contador from './contador/contador';
 import Hooks from './contador/Hooks';
-import Hooks2 from './contador/Hooks2';
 import ToDoList from './formulario/formulario'; 
 
 
