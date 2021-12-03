@@ -1,23 +1,20 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Contador from './contador/contador';
 import Hooks from './contador/Hooks';
 import ToDoList from './formulario/formulario';
-import FichaP from './Ficha/FichaP'
-import Tarjetas from './Ficha/FichaP';
-import ListaTarjetas from './Ficha/FichaP'
+import App from './App';
+import App from './ricky/Rick&Morty';
 
-
-const notas = ["Amarillo","Negro"]
+const notas = ["Amarillo", "Negro"]
 ReactDOM.render(
   <React.StrictMode>
     <Contador />
     <Hooks />
-    <ToDoList array={notas}/>
-    <FichaP />
-    <Tarjetas />
-    <ListaTarjetas />
+    <ToDoList array={notas} />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,50 +1,51 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import './formulario.css';
 
-function AgregarLista(props){
-const [tarea,setTarea] = useState("")
+function AgregarLista(props) {
+    const [tarea, setTarea] = useState("")
 
-   function enviarDatos(e){
-      e.preventDefault();
-      props.enviarDatos(tarea);
-      setTarea("")
-   }
+    function enviarDatos(e) {
+        e.preventDefault();
+        props.enviarDatos(tarea);
+        setTarea("")
+    }
 
-   function cambiarDatos(e){
-       setTarea(e.target.value);
-   }
-   
+    function cambiarDatos(e) {
+        setTarea(e.target.value);
+    }
 
-    return(
+
+    return (
         <div>
             <h1> To Do List (Lista de tareas) </h1>
-        <form onSubmit={enviarDatos}>
-            <input type="text" placeholder="Ingresar tarea" 
-            onChange={cambiarDatos} name="tarea" value={tarea}/>
-            <button className="botones" type="submit"> Agregar </button>
-        </form>
+            <form onSubmit={enviarDatos}>
+                <input type="text" placeholder="Ingresar tarea"
+                    onChange={cambiarDatos} name="tarea" value={tarea} />
+                <button className="botones" type="submit"> Agregar </button>
+            </form>
         </div>
     )
 }
-export default function ToDoList(props){
+export default function ToDoList(props) {
     const [notas, setNotas] = useState(props.array)
 
-    function AgregarNotas(todo){
-        setNotas([...notas,todo]);
+    function AgregarNotas(todo) {
+        setNotas([...notas, todo]);
 
     }
-    return(
+    return (
         <div>
             <AgregarLista enviarDatos={AgregarNotas} />
-            <ListaDeTareas array={notas}/>
+            <ListaDeTareas array={notas} />
         </div>
     )
 }
 
-function ListaDeTareas(props){
-    const lista = props.array.map((valor, index)=>
-    <li key={index}>{valor}</li>)
-    return(
+function ListaDeTareas(props) {
+    const lista = props.array.map((valor, index) =>
+        <li key={index}>{valor}</li>)
+    return (
         <ul>{lista}</ul>
     )
 }
+
