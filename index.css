@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+background-image: url(http://carve850.com.uy/wp-content/uploads/2021/09/Deportes-23-09-2021.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1{
+  color: yellowgreen;
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  
 }
+
+img{
+  border:solid dodgerblue;
+}
+
+button{
+  background:linear-gradient(black,yellow,black);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+input{
+  background: black;
+  color: yellow;
+
+}
+
+li{
+  color: aliceblue;
+  font-size: 20px;
+  color: yellow;
+}
+
+
+h3{
+  color: yellow;
+}
+
